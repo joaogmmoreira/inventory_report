@@ -6,7 +6,7 @@ class JsonImporter(Importer):
     @staticmethod
     def import_data(path):
         if not path.endswith(".json"):
-            raise ValueError("Árquivo inválido")
+            raise ValueError("Arquivo inválido")
         else:
             with open(path, encoding="utf-8") as file:
                 opened_file = json.load(file)
